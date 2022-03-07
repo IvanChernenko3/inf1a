@@ -3,5 +3,13 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello World!\n";
+	int n[15];
+
+	cout << "Ile liczb pierwszych chcesz wyswietlic:";
+	for (int i = 0; i < 16; i++)
+	{
+		cin >> n[15];
+	}
+
+	cout << "Liczby pierwsze:";
 }
