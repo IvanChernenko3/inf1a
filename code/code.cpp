@@ -3,13 +3,26 @@ using namespace std;
 
 int main()
 {
-	int n[15];
+	int n;
+	int lp = 0;
+	int p = 2;
+	bool a = false;
+	cout << "Ile liczb wyswietlic? ";
+	cin >> n;
 
-	cout << "Ile liczb pierwszych chcesz wyswietlic:";
-	for (int i = 0; i < 16; i++)
+	for (int lp = 0; lp < n; lp++) 
 	{
-		cin >> n[15];
+		for (int d = 2; d < p; d++)
+		{
+			if (p % d == 0) 
+			{
+				a = true;
+			}
+		} 
+		if (a == true)
+		{
+			cout << p;
+			p++;
+		}
 	}
-
-	cout << "Liczby pierwsze:";
 }
