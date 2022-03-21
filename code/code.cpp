@@ -5,24 +5,18 @@ int main()
 {
 	int n;
 	int lp = 0;
+	int d = 0;
 	int p = 2;
-	bool a = false;
-	cout << "Ile liczb wyswietlic? ";
+
+	bool flaga = true;
+	cout << "Ile liczb wygenerowac: ";
 	cin >> n;
 
-	for (int lp = 0; lp < n; lp++) 
-	{
-		for (int d = 2; d < p; d++)
-		{
-			if (p % d == 0) 
-			{
-				a = true;
+	while (n < lp) {
+		for (int d = 2; d <= p-1; d++) {
+			if (p % d == 0) {
+				flaga = false; //false - nie jest liczbą parzystą
 			}
-		} 
-		if (a == true)
-		{
-			cout << p;
-			p++;
 		}
 	}
 }
