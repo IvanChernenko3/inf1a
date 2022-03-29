@@ -43,7 +43,7 @@ int main()
 			a = a - b;
 		}
 	}
-	cout << "Najwiekzsy wspolny dzielnik: " << a;*/
+	cout << "Najwiekzsy wspolny dzielnik: " << a;
 
 	//kod na obliczanie NWW
 	int a, b;
