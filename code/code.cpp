@@ -3,6 +3,7 @@ using namespace std;
 
 int main()
 {
+	/*
 	//kod na wilyczanie liczb pierwszych
 
 	int n;
@@ -26,7 +27,7 @@ int main()
 		}
 		p++;
 		dzielniki = 0;
-        }
+	}
 
 	//kod na obliczanie NWD
 	int a, b;
@@ -34,7 +35,7 @@ int main()
 	cin >> a;
 	cout << "Druga liczba: ";
 	cin >> b;
-	
+
 	while (a != b) {
 		if (a < b) {
 			b = b - a;
@@ -53,7 +54,7 @@ int main()
 	cout << "Druga liczba: ";
 	cin >> b;
 	int iloczyn = a * b;
-	
+
 
 	while (a != b) {
 		if (a < b) {
@@ -64,5 +65,26 @@ int main()
 		}
 		nww = iloczyn / a;
 	}
-	cout << "Najwieksza wspolna wielokrotnosc: " << nww; 
+	cout << "Najwieksza wspolna wielokrotnosc: " << nww;
+	*/
+
+	int klucz;
+	char tab[200];
+	int dl = strlen(tab);
+
+	cout << "podaj klucz: ";
+	cin >> klucz;
+	cout << "podaj wyraz: ";
+	cin >> tab;
+
+	if (!(klucz >= -26 && klucz <= 26)) {
+		return;
+	}
+	if (klucz >= 0) {
+		for (int i = 0; i <= 26;) {
+			while {
+
+			}
+		}
+	}
 }
