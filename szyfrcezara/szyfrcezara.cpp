@@ -1,25 +1,11 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
-int main()
-{
-	char tab[1001];
-	int klucz;
-	cout << "Podaj wyraz sk³adaj¹cy siê z ma³ych liter: ";
-	cin >> tab;
-	cout << "Podaj klucz z przedzia³u [-26..26]: ";
-	cin >> klucz;
-	szyfruj(klucz, tab);
-	cout << "Po zaszyfrowaniu: " << tab << endl;
-	szyfruj(-klucz, tab);
-	cout << "Po rozszyfrowaniu: " << tab << endl;
-	return 0;
-}
 void szyfruj(int klucz, char tab[])
 {
 	int dl = strlen(tab);
 	if (!(klucz >= -26 && klucz <= 26)) return;
-	if (klucz >= 0)
+	if (klucz >= 0) 
 		for (int i = 0; i < dl; i++)
 			if (tab[i] + klucz <= 'z')
 				tab[i] += klucz;
@@ -31,4 +17,17 @@ void szyfruj(int klucz, char tab[])
 				tab[i] += klucz;
 			else
 				tab[i] = tab[i] + klucz + 26;
+}
+int main()
+{
+	char tab[1001];
+	int klucz;
+	cout << "Podaj wyraz skÅ‚adajÄ…cy siÄ™ z maÅ‚ych liter: ";
+	cin >> tab;
+	cout << "Podaj klucz z przedziaÅ‚u [-26..26]: ";
+	cin >> klucz;
+	szyfruj(klucz, tab);
+	cout << "Po zaszyfrowaniu: " << tab << endl;
+	szyfruj(-klucz, tab);
+	cout << "Po rozszyfrowaniu: " << tab << endl;
 }
