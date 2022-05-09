@@ -21,7 +21,7 @@ int main()
 }
 
 int funkcja(int tab[], int szukana) {
-    int l = 0, p = 15, sr =  (l + p) / 2;;
+    int l = 0, p = 15, sr =  (l + p) / 2;
 
     while (l <= p) {
         if (tab[sr] == szukana) {
