@@ -16,21 +16,18 @@ int main()
         cout << "Nie ma liczby.\n";
     }
     else {
-        cout << "Liczbą którą szukasz znajduje się na pozycji " << funkcja(tab, szukana);
+        cout << "Szukana liczba " << szukana << " znajduje się na pozycji " << funkcja(tab, szukana);
     }
 }
 
 int funkcja(int tab[], int szukana) {
-    int l, p, sr;
+    int l = 0, p = 15, sr =  (l + p) / 2;;
 
-    l = 0;
-    p = 15;
-    sr = (l + p) / 2;
     while (l <= p) {
         if (tab[sr] == szukana) {
             return sr;
         }
-        if (tab[sr] > szukana) {
+        else if (tab[sr] > szukana) {
             p = sr - 1;
         }
         else {
