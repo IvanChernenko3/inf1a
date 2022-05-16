@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 using namespace std;
 
-int funkcja(int tab[], int szukana);
+int szukaj(int tab[], int szukana);
 
 
 int main()
@@ -12,15 +12,15 @@ int main()
 
     cout << "Podaj liczbe ktora chcesz znalezc: \n";
     cin >> szukana;
-    if (funkcja(tab, szukana) == -1) {
+    if (szukaj(tab, szukana) == -1) {
         cout << "Nie ma liczby.\n";
     }
     else {
-        cout << "Szukana liczba " << szukana << " znajduje się na pozycji " << funkcja(tab, szukana);
+        cout << "Szukana liczba " << szukana << " znajduje się na pozycji " << szukaj(tab, szukana);
     }
 }
 
-int funkcja(int tab[], int szukana) {
+int szukaj(int tab[], int szukana) {
     int l = 0, p = 15, sr =  (l + p) / 2;
 
     while (l <= p) {
